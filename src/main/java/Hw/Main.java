@@ -16,21 +16,21 @@ public class Main {
         String delemiter = " ";
         System.out.println("Ф. И. О. сотрудника —" + String.join(delemiter, lastName, firstName, middleName));
         System.out.println("Задание 1 вариант 4");
-        System.out.println("Задание 1 можно было ещё 4 варианта");
         String[] str = new String[3];
         str[0] = lastName;
         str[1] = firstName;
         str[2] = middleName;
         System.out.println("Ф. И. О. сотрудника —" + String.join(delemiter, str));
+        System.out.println("Задание 1 можно было ещё 4 варианта");
         System.out.println("Задание 2 ");
-        fullName = fullName.toUpperCase();
-        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчета  — " + fullName);
+        String upperFullName = fullName.toUpperCase();
+        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчета  — " +  upperFullName );
         System.out.println("Задание 3  вариант 1");
         fullName = "Иванов Семён Семёнович";
-        String newName = fullName.replace("ё", "е");
-        System.out.println("Данные Ф. И. О. сотрудника — " + newName);
+        String newFullName = fullName.replace("ё", "е");
+        System.out.println("Данные Ф. И. О. сотрудника — " + newFullName);
         System.out.println("Задание 3  вариант 2");
-        newName = "";
+        String newName = "";
         for (int index = 0; index < fullName.length(); index++) {
             if ('ё' == fullName.charAt(index)) {
                 newName = newName + "е";
